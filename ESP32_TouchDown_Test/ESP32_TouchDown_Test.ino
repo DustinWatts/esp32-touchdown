@@ -55,6 +55,8 @@ bool initBluetooth()
     Serial.println("Failed to enable bluedroid");
     return false;
   }
+
+  return true;
  
 }
  
@@ -294,7 +296,7 @@ void loop() {
       tft.println(WiFi.localIP());
       delay(1000);
 
-      Serial.print("Starting to draw pretty colours");
+      Serial.println("Starting to draw pretty colours");
       tft.print("Starting to draw pretty colours");
 
       for(int i=0; i < 5; i++)
@@ -304,6 +306,8 @@ void loop() {
         delay(500);
       }
 
+      Serial.println(".");
+      
       tft.fillScreen(TFT_BLACK);
       
       for(int i=0; i < 50; i++)
@@ -313,15 +317,26 @@ void loop() {
 
       tft.fillScreen(TFT_BLACK);
       tft.setCursor (0, 0);
-
+      
+      Serial.println("Drawing from SPIFFS");
       drawBmpSPIFFS("/thumbsup.bmp", 0, 0);
 
       delay(5000);
 
+      Serial.println("Drawing from SD");
       drawBmpSD("/thumbsup.bmp", 0, 0);
+
+      delay(5000);
+
+      tft.fillScreen(TFT_BLACK);
+      tft.setCursor (0, 0);
       
-//      Serial.println("Test successfully finished!");
-//      tft.println("Test successfully finished!");
+      Serial.println("Test successfully finished!");
+      tft.println("Test successfully finished!");
+
+      WiFi.mode(WIFI_OFF);
+      WiFi.disconnect(true);
+      
   }
   
 }

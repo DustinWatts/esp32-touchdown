@@ -1,0 +1,35 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMG3415U-7
+D P-MOSFET transistor, source/drain/gate
+K transistor PMOS P-MOS P-MOSFET
+F ~
+$ENDCMP
+#
+$CMP FPC_40P_0.5mm
+D FPC 40 Pin Connector
+$ENDCMP
+#
+$CMP LGES8050
+D 0.7A Ic, 20V Vce, Low Voltage High Current NPN Transistor, TO-92
+K S8050 NPN Low Voltage High Current Transistor
+F http://www.unisonic.com.tw/datasheet/S8050.pdf
+$ENDCMP
+#
+$CMP V+
+D Power symbol creates a global label with name "V+"
+K power-flag
+$ENDCMP
+#
+$CMP VIN
+D Power symbol creates a global label with name "VIN"
+K power-flag
+$ENDCMP
+#
+$CMP XPT2046TS
+D Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, TSSOP-16
+K Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, TSSOP-16
+F http://www.xptek.cn/uploadfile/download/201707171401161883.pdf
+$ENDCMP
+#
+#End Doc Library
