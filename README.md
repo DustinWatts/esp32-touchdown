@@ -18,11 +18,11 @@ and capacitive touch has a much nicer user experience. While I was desining the 
 - 12 unused GPIO's broken out
 - Stemma / JST-PH I2C connector
 
-ESP32 TouchDown works out of the box with the Arduino IDE, providing you have installed the ESP32 Arduino Core. If you have not, this is where you can find it: [https://github.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32)
+ESP32 TouchDown works out of the box with the Arduino IDE, providing you have installed the ESP32 Arduino Core. If you have not, this is where you can find it: [https://github.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32).
 
 # TFT screen and touch controller
 
-ESP32 TouchDown uses an 480x320 screen with an ILI9488 driver. There are numerous drivers out there, but I found TFT_eSPI by Bodmer the most versitile. [https://github.com/Bodmer/TFT_eSPI](https://github.com/Bodmer/TFT_eSPI). 
+ESP32 TouchDown uses an 480x320 screen with an ILI9488 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/ILITEK_ILI9488.pdf)) driver. There are numerous drivers out there, but I found TFT_eSPI by Bodmer the most versitile. [https://github.com/Bodmer/TFT_eSPI](https://github.com/Bodmer/TFT_eSPI). 
 
 Pins used by the TFT screen are:
 
@@ -32,9 +32,9 @@ Pins used by the TFT screen are:
 - GPIO18 -> SPI Clock
 - GPIO23 -> SDI (MOSI)
 
-The TFT backlight anode (positive supply) is selectable via a jumper on the back. You can either power it directly from 3.3V or use GPIO32. By default, the positive source is 3.3V. 
+The TFT backlight anode (positive supply) is selectable via a jumper on the back. You can either power it directly from 3.3V or use GPIO32. By default, the positive source is 3.3V. You can change this and use PWM to control the backlight brightness.
 
-The touch controller is a FocalTech FT6236. The FT6236 I2C and has address 0X38. I made an Arduino IDE library available here: [https://github.com/DustinWatts/FT6236](https://github.com/DustinWatts/FT6236).
+The touch controller is a FocalTech FT6236 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/FT6236-FocalTechSystems.pdf)). The FT6236 I2C and has address 0X38. I made an Arduino IDE library available here: [https://github.com/DustinWatts/FT6236](https://github.com/DustinWatts/FT6236).
 
 Pins used by the FT6236 are:
 
