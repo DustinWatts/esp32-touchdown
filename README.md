@@ -1,5 +1,7 @@
 # ESP32 TouchDown
 
+![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_2.jpg)
+
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_features.png)
 
 The ESP32 TouchDown was born out of a need for a capacitive touch screen module. Most modules I could find where resistive touch
