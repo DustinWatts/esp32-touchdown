@@ -40,9 +40,9 @@ The touch controller is a FocalTech FT6236 ([datasheet](https://github.com/Dusti
 
 Pins used by the FT6236 are:
 
-GPIO21 -> I2C data
-GPIO22 -> I2C clock
-GPIO27 -> IRQ
+- GPIO21 -> I2C data
+- GPIO22 -> I2C clock
+- GPIO27 -> IRQ
 
 # Open Source
 
