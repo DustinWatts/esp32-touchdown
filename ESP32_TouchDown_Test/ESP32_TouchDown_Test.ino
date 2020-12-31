@@ -28,8 +28,8 @@
 
 TFT_eSPI tft = TFT_eSPI();
 
-char ssid[64] = "";           // <-- Your WIFI SSID
-char password[64] = "";       // <-- Your WIFI PASSWORD
+char ssid[64] = " ";           // <-- Your WIFI SSID
+char password[64] = " ";       // <-- Your WIFI PASSWORD
 
 uint8_t sdSelectPin = 25;
 
@@ -183,6 +183,11 @@ void setup() {
     
   // Pin modes
   pinMode(33, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(14, OUTPUT);
+  pinMode(16, OUTPUT);
+  pinMode(17, OUTPUT);
 
   // Setup PWM channel for Piezo speaker
   ledcSetup(0, 500, 8);
@@ -211,10 +216,40 @@ void loop() {
       ledcWrite(0, 0);
     
       // Blink breakout header pins
+
+      Serial.println("IOs on...");
+      tft.println("IOs on...");
+      
       digitalWrite(33, HIGH);
-      delay(300);
+      delay(100);
+      digitalWrite(12, HIGH);
+      delay(100);
+      digitalWrite(13, HIGH);
+      delay(100);
+      digitalWrite(14, HIGH);
+      delay(100);
+      digitalWrite(16, HIGH);
+      delay(100);
+      digitalWrite(17, HIGH);
+      delay(100);
+
+      delay(5000);
+
+      Serial.println("IOs off...");
+      tft.println("IOs off...");
+
       digitalWrite(33, LOW);
-      delay(300);
+      delay(100);
+      digitalWrite(12, LOW);
+      delay(100);
+      digitalWrite(13, LOW);
+      delay(100);
+      digitalWrite(14, LOW);
+      delay(100);
+      digitalWrite(16, LOW);
+      delay(100);
+      digitalWrite(17, LOW);
+      delay(100);
 
       // TEST SD Card
       uint8_t cardType = SD.cardType();
