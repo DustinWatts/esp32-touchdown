@@ -18,7 +18,7 @@
 uint8_t BATT_DIV = 35;
 uint16_t totalReadings = 0;
 uint8_t numReadings = 8;
-float multiplicationFactor = 1.782;
+float multiplicationFactor = 1.782; // Adjust this factor to report correct voltages.
 uint8_t sampleTimeDelay = 250;
 
 void setup() {
