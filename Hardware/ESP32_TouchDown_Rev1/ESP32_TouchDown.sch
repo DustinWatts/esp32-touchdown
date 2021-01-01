@@ -73,7 +73,7 @@ L Switch:SW_SPDT SW3
 U 1 1 5F6A6ADB
 P 7600 1800
 F 0 "SW3" H 7350 2300 50  0000 C CNN
-F 1 "SK-3296S-01-L3 " H 7350 2200 50  0000 C CNN
+F 1 "K3-1280S-F1 " H 7350 2200 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 7600 1800 50  0001 C CNN
 F 3 "~" H 7600 1800 50  0001 C CNN
 	1    7600 1800
@@ -624,24 +624,12 @@ Wire Notes Line
 	8250 2650 4200 2650
 Text Notes 7700 2750 0    50   ~ 0
 ESP32 WROOM
-$Comp
-L ESP32_TouchDown:FPC_40P_0.5mm FPC1
-U 1 1 5F8810B4
-P 9800 4850
-F 0 "FPC1" H 9700 6850 50  0000 C CNN
-F 1 "FPC_40P_0.5mm" H 10200 2750 50  0000 C CNN
-F 2 "Connector_FFC-FPC:Hirose_FH12-40S-0.5SH_1x40-1MP_P0.50mm_Horizontal" H 10000 6050 50  0001 C CNN
-F 3 "" H 10000 6050 50  0001 C CNN
-	1    9800 4850
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	8400 2650 11150 2650
 Wire Notes Line
 	11150 2650 11150 7200
 Wire Notes Line
 	11150 7200 8400 7200
-Connection ~ 9900 5300
 $Comp
 L power:GND #PWR0124
 U 1 1 5F8A7CA0
@@ -653,8 +641,6 @@ F 3 "" H 10300 5350 50  0001 C CNN
 	1    10300 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10300 5300 9900 5300
 $Comp
 L power:GND #PWR0125
 U 1 1 5F8B2D1B
@@ -682,8 +668,6 @@ F 3 "" H 10650 6800 50  0001 C CNN
 	1    10650 6800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10650 6800 9900 6800
 Wire Wire Line
 	10300 5350 10300 5300
 Text GLabel 10000 4400 2    50   Input ~ 0
@@ -719,8 +703,6 @@ F 3 "" H 10200 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 3600 9900 3600
-Wire Wire Line
 	9900 3500 9900 3600
 NoConn ~ 9900 3700
 Wire Wire Line
@@ -736,8 +718,6 @@ F 3 "" H 10450 4100 50  0001 C CNN
 	1    10450 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10450 4100 9900 4100
 NoConn ~ 9900 4300
 Wire Wire Line
 	10000 4400 9900 4400
@@ -747,8 +727,6 @@ Wire Wire Line
 	10000 4200 9900 4200
 Wire Wire Line
 	10000 3900 9900 3900
-Wire Wire Line
-	10200 3400 9900 3400
 Text Notes 10500 2750 0    50   ~ 0
 TFT FPC 40 Pin
 Text Notes 3800 2500 0    50   Italic 0
@@ -1444,10 +1422,10 @@ Wire Notes Line
 	4150 2650 4150 6650
 Text Notes 4850 1050 0    50   Italic 0
 C96616
-Text Notes 5000 2000 0    50   Italic 0
+Text Notes 5050 2000 0    50   Italic 0
 C51118
-Text Notes 7150 1550 0    50   Italic 0
-C319019
+Text Notes 7450 1550 0    50   Italic 0
+C92658
 Text Notes 11100 1600 1    50   Italic 0
 C160352
 Text Notes 9900 7100 0    50   Italic 0
@@ -1934,8 +1912,6 @@ F 3 "" H 7100 8100 50  0001 C CNN
 $EndComp
 Text GLabel 10000 6300 2    50   Input ~ 0
 LED_K1
-Wire Wire Line
-	10250 6600 9900 6600
 Text GLabel 10000 6400 2    50   Input ~ 0
 LED_K2
 Text GLabel 10000 6500 2    50   Input ~ 0
@@ -1999,8 +1975,6 @@ F 3 "" H 10650 6200 50  0001 C CNN
 	1    10650 6200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10650 6200 9900 6200
 Text GLabel 6400 6800 1    50   Input ~ 0
 TFT_LED
 $Comp
@@ -2008,7 +1982,7 @@ L Jumper:SolderJumper_3_Open JP1
 U 1 1 60010148
 P 6700 6900
 F 0 "JP1" H 6700 7105 50  0000 C CNN
-F 1 "3V3/GPIO" H 6700 7014 50  0000 C CNN
+F 1 "GPIO/3V3" H 6700 7014 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 6700 6900 50  0001 C CNN
 F 3 "~" H 6700 6900 50  0001 C CNN
 	1    6700 6900
@@ -2067,7 +2041,7 @@ L Device:R R22
 U 1 1 60416135
 P 6600 1750
 F 0 "R22" V 6500 1700 50  0000 L CNN
-F 1 "1K" V 6700 1700 50  0000 L CNN
+F 1 "3.3K" V 6700 1700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6530 1750 50  0001 C CNN
 F 3 "~" H 6600 1750 50  0001 C CNN
 	1    6600 1750
@@ -2212,10 +2186,10 @@ Wire Wire Line
 	2450 1150 2450 1250
 Connection ~ 2450 1150
 $Comp
-L Device:Polyfuse F2
+L Device:Polyfuse F1
 U 1 1 5FE0369E
 P 1950 850
-F 0 "F2" V 1725 850 50  0000 C CNN
+F 0 "F1" V 1725 850 50  0000 C CNN
 F 1 "Polyfuse" V 1816 850 50  0000 C CNN
 F 2 "Fuse:Fuse_0805_2012Metric" H 2000 650 50  0001 L CNN
 F 3 "~" H 1950 850 50  0001 C CNN
@@ -2314,7 +2288,77 @@ LDO_EN
 Wire Wire Line
 	7900 1500 7900 1700
 Wire Wire Line
-	9900 4500 9900 5300
+	10650 6800 9900 6800
 Wire Wire Line
-	9900 5300 9900 6100
+	10250 6600 9900 6600
+Wire Wire Line
+	10650 6200 9900 6200
+Wire Wire Line
+	10450 4100 9900 4100
+Wire Wire Line
+	10450 3600 9900 3600
+Wire Wire Line
+	10200 3400 9900 3400
+Wire Wire Line
+	10300 5300 9900 5300
+$Comp
+L ESP32_TouchDown:FPC_40P_0.5mm FPC1
+U 1 1 5F8810B4
+P 9800 4850
+F 0 "FPC1" H 9700 6850 50  0000 C CNN
+F 1 "FPC_40P_0.5mm" H 10200 2750 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-40S-0.5SH_1x40-1MP_P0.50mm_Horizontal" H 10000 6050 50  0001 C CNN
+F 3 "" H 10000 6050 50  0001 C CNN
+	1    9800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 6100 9900 6000
+Wire Wire Line
+	9900 5900 9900 6000
+Connection ~ 9900 6000
+Wire Wire Line
+	9900 5900 9900 5800
+Connection ~ 9900 5900
+Wire Wire Line
+	9900 5800 9900 5700
+Connection ~ 9900 5800
+Wire Wire Line
+	9900 5700 9900 5600
+Connection ~ 9900 5700
+Connection ~ 9900 5300
+Connection ~ 9900 5400
+Wire Wire Line
+	9900 5400 9900 5300
+Connection ~ 9900 5500
+Wire Wire Line
+	9900 5500 9900 5400
+Connection ~ 9900 5600
+Wire Wire Line
+	9900 5600 9900 5500
+Wire Wire Line
+	9900 4500 9900 4600
+Connection ~ 9900 4600
+Wire Wire Line
+	9900 4600 9900 4700
+Connection ~ 9900 4700
+Wire Wire Line
+	9900 4700 9900 4800
+Connection ~ 9900 4800
+Wire Wire Line
+	9900 4800 9900 4900
+Connection ~ 9900 4900
+Wire Wire Line
+	9900 4900 9900 5000
+Connection ~ 9900 5000
+Wire Wire Line
+	9900 5000 9900 5100
+Connection ~ 9900 5100
+Wire Wire Line
+	9900 5100 9900 5200
+Connection ~ 9900 5200
+Wire Wire Line
+	9900 5200 9900 5300
+Text Notes 1350 2250 0    50   Italic 0
+C319148
 $EndSCHEMATC
