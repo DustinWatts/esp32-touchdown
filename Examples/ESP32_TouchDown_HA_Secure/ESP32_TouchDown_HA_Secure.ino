@@ -1,5 +1,5 @@
 /**
-  Title: ESP32 TouchDown HA
+  Title: ESP32 TouchDown HA Secure
   Author: Dustin Watts
   Date: 01-01-2021
 
@@ -7,7 +7,9 @@
   For this example you will need to have a Long Lives Access Token from HA. You will also need the IP address and port
   of your server. 
 
-  This example uses HTTP. If your HA uses HTTPS check out the example called "ESP32 TouchDown HA Secure".
+  This example uses a secure connection to an HA server. You will need the root certificate of the server. You'll need to convert this 
+  to a multiline string. Basically, take the raw text of the certificate and add `"` at the beginning of each line and add `\n"`
+  at the end of each line.
 
   HA expects a JSON object as payload. You can use ArduinoJson to create those objects, but in this exmaple I'm just creating the raw
   data myself. Make sure when you create the string to escape all double quotes! E.g. "{\"entity_id\":\"switch.simple_led_1\"}"
@@ -18,6 +20,7 @@
 
 #include <TFT_eSPI.h> // The TFT_eSPI library
 #include <WiFi.h> // Wifi support
+#include <WiFiClientSecure.h>
 #include <HTTPClient.h> 
 #include <ESPmDNS.h> // mDNS functionality
 #include <Wire.h>
@@ -26,10 +29,44 @@
 const char *ssid = " "; // <- SSID here
 const char *password = " "; // <- Password here
 const char *server = " "; // the IP address of your HA server here
-uint16_t port = 8123; // the port of your HA server here
+uint16_t port = 443; // the port of your HA server here
 
 // Place your Long Lived Access Token from HA here:
 const char *authtoken = " ";
+
+// Root Certificate of the server
+
+const char* rootCACertificate = \
+"-----BEGIN CERTIFICATE-----\n"
+"MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw\n"
+"TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\n"
+"cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw\n"
+"WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg\n"
+"RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\n"
+"AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP\n"
+"R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx\n"
+"sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm\n"
+"NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg\n"
+"Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG\n"
+"/kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC\n"
+"AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB\n"
+"Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA\n"
+"FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw\n"
+"AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw\n"
+"Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB\n"
+"gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W\n"
+"PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl\n"
+"ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz\n"
+"CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm\n"
+"lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4\n"
+"avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2\n"
+"yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O\n"
+"yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids\n"
+"hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+\n"
+"HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv\n"
+"MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX\n"
+"nLRbwHOoq7hHwg==\n"
+"-----END CERTIFICATE-----";
 
 // Keypad start position, key sizes and spacing
 #define KEY_W 95 // Width and height
@@ -141,17 +178,17 @@ void buttonpress(int button)
     case 0:
      Serial.println("Button 1 pressed");
      // An example of switching a switch
-     sendRestPost("/api/services/switch/toggle", "{\"entity_id\":\"switch.simple_led_1\"}");
+     sendSecureRestPost("/api/services/switch/toggle", "{\"entity_id\":\"switch.simple_led_1\"}");
      break;
     case 1:
      Serial.println("Button 2 pressed");
      // An example of switching a switch
-     sendRestPost("/api/services/switch/toggle", "{\"entity_id\":\"switch.simple_led_2\"}");
+     sendSecureRestPost("/api/services/switch/toggle", "{\"entity_id\":\"switch.simple_led_2\"}");
      break;
     case 2:
      Serial.println("Button 3 pressed");
      // An example of turning on a scene
-     sendRestPost("/api/services/scene/turn_on", "{\"entity_id\":\"scene.turn_off_both_leds\"}");
+     sendSecureRestPost("/api/services/scene/turn_on", "{\"entity_id\":\"scene.turn_off_both_leds\"}");
      // Doing nothing for now
      break;
     case 3:
@@ -193,12 +230,15 @@ void buttonpress(int button)
   }
 }
 
-void sendRestPost(String endpoint, String payload)
+void sendSecureRestPost(String endpoint, String payload)
 {
-      
-      HTTPClient rest;
 
-      // Just some information to the serial monitor
+ WiFiClientSecure *client = new WiFiClientSecure;
+  if(client) {
+    client->setCACert(rootCACertificate);
+   {
+      HTTPClient https;
+
       Serial.print("Posting to ");
       Serial.print(server);
       Serial.print(" on port ");
@@ -206,35 +246,42 @@ void sendRestPost(String endpoint, String payload)
       Serial.print(" to endpoint ");
       Serial.println(endpoint);
 
-      rest.begin(server, port, endpoint);
-      rest.addHeader("Content-Type", "application/json");
-      String auth = "Bearer ";
-      auth += authtoken;
-      rest.addHeader("Authorization", auth);
-      rest.addHeader("cache-control","no-cache");
+      if (https.begin(*client, server, port, endpoint)) {
+        https.addHeader("Content-Type", "application/json");
+        String auth = "Bearer ";
+        auth += authtoken;
+        https.addHeader("Authorization", auth);
+        https.addHeader("cache-control","no-cache");
 
-      // Just some information to the serial monitor
-      Serial.print("Posting: ");
-      Serial.println(payload);
-        
-      int httpCode = rest.POST(payload);
+        Serial.print("Posting: ");
+        Serial.println(payload);
+          
+        int httpCode = https.POST(payload);
   
-      if (httpCode > 0) 
-      {
-        // Print the response to the serial monitor
-        String response = rest.getString();
-        Serial.print("Sent! Response: ");
-        Serial.println(response);
-       } 
-       else 
-       { 
-          // Print the error to the serial monitor
-          Serial.printf("Sent but POST failed, error: %s\n", rest.errorToString(httpCode).c_str());
-          String response = rest.getString();
-          Serial.println(String("Error:") + response);
-       }
-       
-       rest.end();
+        if (httpCode > 0) {
+
+          String response = https.getString();
+
+          Serial.print("Posted! Response: ");
+          Serial.println(response);
+  
+        } else {
+          Serial.printf("POST... failed, error: %s\n", https.errorToString(httpCode).c_str());
+          String payload = https.getString();
+          Serial.println(String("Error:") + payload);
+        }
+  
+        https.end();
+      } else {
+        Serial.println("Unable to connect");
+      }
+    }
+  
+    delete client;
+  } else {
+    Serial.println("Unable to create client");
+  }
+  
 }
 
 void drawKeypad()
