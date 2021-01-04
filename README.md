@@ -46,6 +46,34 @@ Pins used by the FT6236 are:
 - GPIO22 -> I2C clock
 - GPIO27 -> IRQ
 
+# GPIO Breakout
+
+The following GPIO's are broken out on the header:
+
+- GPIO 12
+- GPIO 13
+- GPIO 14
+- GPIO 16
+- GPIO 17
+- SCK (GPIO 18, used as SPI clock)
+- SDO (GPIO 19, used as SPI MOSI)
+- SDA (GPIO 21, used as I2C data)
+- SCL (GPIO 22, used as I2C clock)
+- SDI (GPIO 23, used as SPI MISO)
+- GPIO 33
+- GPIO 34 (note: INPUT only!)
+
+# SD Card
+
+The following pins are used by the SD card holder:
+
+- GPIO 25 --> CD/DAT3
+- GPIO 23 --> CMD
+- GPIO 18 --> CLK
+- GPIO 19 --> DAT0
+
+*CD (card detect) DAT1 and DAT2 are not connected.*
+
 # Open Source
 
 Everything about the ESP32 TouchDown is open source. This means I provide you will all the designs I make. In this repository you will find the Kicad project, including scematic and board layout. Also the complete BOM is available to you. I inculded all the datasheets of all the hardware used.
