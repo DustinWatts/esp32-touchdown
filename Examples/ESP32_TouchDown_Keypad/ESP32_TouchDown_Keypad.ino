@@ -8,6 +8,8 @@
 
   This example is based on the examples that come with the TFT_eSPI library. Which includes the Adafruit GFX button handling class.
 
+  ! Don't forget to configure User_Setup.h in the TFT_eSPI library. You can use User_setup.h in "/TFT_eSPI Setup Example".
+
 */
 
 #include <TFT_eSPI.h> // The TFT_eSPI library

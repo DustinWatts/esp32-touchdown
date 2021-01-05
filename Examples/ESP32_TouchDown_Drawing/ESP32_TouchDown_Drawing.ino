@@ -9,8 +9,9 @@
  * TFT_eSPI (by Bodmer)
  * FT6232 (by Dustin Watts)
  * 
- * It is important that in the TFT_eSPI library the right configuration is used. You can do this by modifying the User_Setup.h file
- * in the library folder.
+ * This example is based on the examples that come with the TFT_eSPI library. Which includes the Adafruit GFX button handling class.
+ * 
+ * ! Don't forget to configure User_Setup.h in the TFT_eSPI library. You can use User_setup.h in "/TFT_eSPI Setup Example".
  * 
  * User_Setup.h configuration:
  * 

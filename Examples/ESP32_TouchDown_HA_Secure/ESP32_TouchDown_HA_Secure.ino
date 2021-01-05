@@ -14,7 +14,9 @@
   HA expects a JSON object as payload. You can use ArduinoJson to create those objects, but in this exmaple I'm just creating the raw
   data myself. Make sure when you create the string to escape all double quotes! E.g. "{\"entity_id\":\"switch.simple_led_1\"}"
 
-  This example is based on the examples that come with the TFT_eSPI library. Which includes the Adafruit GFX button handeling class.
+  This example is based on the examples that come with the TFT_eSPI library. Which includes the Adafruit GFX button handling class.
+
+  ! Don't forget to configure User_Setup.h in the TFT_eSPI library. You can use User_setup.h in "/TFT_eSPI Setup Example".
 
 */
 
