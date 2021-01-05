@@ -5,7 +5,7 @@
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_features.png)
 
 The ESP32 TouchDown was born out of a need for a capacitive touch screen module. Most modules I could find where resistive touch
-and capacitive touch has a much nicer user experience. While I was desining the module it made sence to put the ESP32 on the board itself, removing the need for an ESP32 Dev board. I wanted to take full advantage of the ESP32 wireless capabilities (Wifi, BLE) so I included a battery managment circuit. ESP32 TouchDown can run of a LiPo battery and also charge it. Here is a full list of the features:
+and capacitive touch has a much nicer user experience. While I was designing the module it made sense to put the ESP32 on the board itself, removing the need for an ESP32 Dev board. I wanted to take full advantage of the ESP32 wireless capabilities (Wifi, BLE) so I included a battery management circuit. ESP32 TouchDown can run of a LiPo battery and also charge it. Here is a full list of the features:
 
 - ESP32-WROOM-32D
 - ILI9488 480*320 TFT screen in 4-wire SPI mode
