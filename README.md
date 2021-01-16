@@ -22,6 +22,10 @@ and capacitive touch has a much nicer user experience. While I was designing the
 
 ESP32 TouchDown works out of the box with the Arduino IDE, providing you have installed the ESP32 Arduino Core. If you have not, this is where you can find it: [https://github.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32).
 
+# Documentation:
+
+Documentation can be found in the [Wiki](https://github.com/DustinWatts/esp32-touchdown/wiki).
+
 # TFT screen and touch controller
 
 ESP32 TouchDown uses an 480x320 screen with an ILI9488 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/ILITEK_ILI9488.pdf)) driver. There are numerous drivers out there, but I found TFT_eSPI by Bodmer the most versatile. [https://github.com/Bodmer/TFT_eSPI](https://github.com/Bodmer/TFT_eSPI). 
