@@ -40,7 +40,7 @@ Pins used by the TFT screen are:
 
 The TFT backlight anode (positive supply) is selectable via a jumper on the back. You can either power it directly from 3.3V or use GPIO32. By default, the positive source is 3.3V. You can change this and use PWM to control the backlight brightness.
 
-![TFT Backlight Select](http://www.dustinwatts.nl/ESP32-TouchDown/backlight_select_tft.png)
+![TFT Backlight Select](http://www.dustinwatts.nl/ESP32-TouchDown/backlight_select.png)
 
 The touch controller is a FocalTech FT6236 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/FT6236-FocalTechSystems.pdf)). The FT6236 uses I2C and has address 0X38. I made an Arduino IDE library available here: [https://github.com/DustinWatts/FT6236](https://github.com/DustinWatts/FT6236).
 
