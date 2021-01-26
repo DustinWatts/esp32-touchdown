@@ -4,10 +4,10 @@
  * 
  * This example show how to read touch data and draw something to the screen acoording to the coordinates.
  * 
- * Used libraries:
+ * These libraries need to be installed:
  * 
- * TFT_eSPI (by Bodmer)
- * FT6232 (by Dustin Watts)
+ * - FT6236 (https://github.com/DustinWatts/FT6236)
+ * - TFT_eSPI (available through the Library Manager)
  * 
  * This example is based on the examples that come with the TFT_eSPI library. Which includes the Adafruit GFX button handling class.
  * 

@@ -4,7 +4,26 @@
  * 
  * This is the test used to check all new boards. It tests the TFT screen (SPI),
  * the FT6236 touch controller (I2C), WiFi, SPIFFS, BLE, UART, the battery voltage, 
- * the speaker, and tests all the broken out pins.
+ * the speaker, the SD card, and tests all the broken out pins.
+ * 
+ * These libraries need to be installed:
+ * 
+ * - ESP32-BLE-Keyboard forked from T-vk (https://github.com/DustinWatts/ESP32-BLE-Keyboard)
+ * - FT6236 (https://github.com/DustinWatts/FT6236)
+ * - TFT_eSPI (available through the Library Manager)
+ * 
+ * ! Don't forget to configure User_Setup.h in the TFT_eSPI library. You can use User_setup.h in "/TFT_eSPI Setup Example".
+ * 
+ * User_Setup.h configuration:
+ * 
+ * #define ILI9488_DRIVER 
+ * 
+ * #define TFT_MISO 19
+ * #define TFT_MOSI 23
+ * #define TFT_SCLK 18
+ * #define TFT_CS   15  // Chip select control pin
+ * #define TFT_DC    2  // Data Command control pin
+ * #define TFT_RST   4 
  * 
  */
 

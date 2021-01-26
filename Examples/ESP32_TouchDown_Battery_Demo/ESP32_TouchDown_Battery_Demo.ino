@@ -15,6 +15,10 @@
  *  
  *  It then waits a second and repeats.
  *  
+ *  This library needs to be installed:
+ * 
+ *  - TFT_eSPI (available through the Library Manager)
+ *
  */
 
 #include <TFT_eSPI.h>

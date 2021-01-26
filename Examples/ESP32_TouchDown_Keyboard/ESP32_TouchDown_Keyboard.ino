@@ -7,6 +7,11 @@
 
   This example is based on the examples that come with the TFT_eSPI library. Which includes the Adafruit GFX button handling class.
 
+  These libraries need to be installed:
+  
+  - FT6236 (https://github.com/DustinWatts/FT6236)
+  - TFT_eSPI (available through the Library Manager)
+
   ! Don't forget to configure User_Setup.h in the TFT_eSPI library. You can use User_setup.h in "/TFT_eSPI Setup Example".
 
 */
@@ -128,7 +133,7 @@ void buttonpress(int button)
   tft.setTextColor(TFT_WHITE, TFT_BLACK);
   tft.setCursor(5, 5);
   // Uncomment next line if you want a beep everytime you press a key
-  // beep();
+  beep();
   if(button < 26){
       if(!upper){
         if(!numeric){
@@ -272,6 +277,10 @@ void buttonpress(int button)
       tft.setCursor(5, 5);
       Serial.println(textbuffer);
       textbuffer = "";
+
+      //Redraw the keyboard we started with
+      drawUpperKeyboard();
+      upper = true;  
     
   }
 }
