@@ -22,3 +22,8 @@ a cover with a battery compartment, and a back that has the same wedge style as 
 (file: ESP32_TouchDown_FTD.stl)
 
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/docs/ESP32_TouchDown_Case_FTD.png)
+
+# The 30° angle FreeTouchDeck-style Back
+(file: ESP32_TouchDown_FTD.stl)
+
+![ESP32 TouchDown](../Images/ESP32_TouchDown_Case_FTD_30.png)
