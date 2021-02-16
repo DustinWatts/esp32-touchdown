@@ -79,7 +79,7 @@ The following pins are used by the SD card holder:
 
 # Open Source
 
-Everything about the ESP32 TouchDown is open source. This means I provide you will all the designs I make. In this repository, you will find the KiCad project, including scematic, and board layout. Also, the complete BOM is available to you. I have included the datasheets of all the hardware used.
+Everything about the ESP32 TouchDown is open source. This means I provide you will all the designs I make. In this repository, you will find the KiCad project, including schematic, and board layout. Also, the complete BOM is available to you. I have included the datasheets of all the hardware used.
 
 ![License](http://www.dustinwatts.nl/ESP32-TouchDown/license.svg)
 
