@@ -4,7 +4,7 @@
 
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_features.png)
 
-While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), I really wanted to use capacitive touch. Unfortunately, most modules I could find where resistive touch and capacitive touch has a much nicer user experience. While I was designing, it made sense to put the ESP32 on the board itself, removing the need for an ESP32 Dev board. I wanted to take full advantage of the ESP32 wireless capabilities (Wifi, BLE) so I included a battery management circuit. ESP32 TouchDown can run of a LiPo battery and also charge it. Here is a full list of the features:
+While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), I really wanted to use capacitive touch. Unfortunately, most modules I could find were resistive touch and capacitive touch has a much nicer user experience. While I was designing, it made sense to put the ESP32 on the board itself, removing the need for an ESP32 Dev board. I wanted to take full advantage of the ESP32 wireless capabilities (Wifi, BLE) so I included a battery management circuit. ESP32 TouchDown can run off of a LiPo battery and also charge it. Here is a full list of the features:
 
 - ESP32-WROOM-32D
 - ILI9488 480*320 TFT screen in 4-wire SPI mode
