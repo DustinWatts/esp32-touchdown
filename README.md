@@ -1,5 +1,7 @@
 # ESP32 TouchDown
 
+#### If you bought your ESP32 TouchDown with FreeTouchDeck pre-installed, check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
+
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_2.jpg)
 
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_features.png)
