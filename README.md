@@ -43,7 +43,7 @@ The TFT backlight anode (positive supply) is selectable via a jumper on the back
 
 ![TFT Backlight Select](http://www.dustinwatts.nl/ESP32-TouchDown/backlight_select.png)
 
-The touch controller is a FocalTech FT62x6 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/FT6236-FocalTechSystems.pdf)). The FT62x6 uses I2C and has address 0X38. I made an Arduino IDE library available here: [https://github.com/DustinWatts/FT6236](https://github.com/DustinWatts/FT6236).
+The touch controller is a FocalTech FT62x6 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/FT6236-FocalTechSystems.pdf)). The first batch uses an FT6236 and the second batch of boards has the FT6206. Both have the same I2C address of 0X38. I made an Arduino IDE library available here: [https://github.com/DustinWatts/FT6236](https://github.com/DustinWatts/FT6236). This library also supports the FT6202.
 
 Pins used by the FT62x6 are:
 
