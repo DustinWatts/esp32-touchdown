@@ -1,14 +1,16 @@
 # ESP32 TouchDown
 
+#### If you bought your ESP32 TouchDown with FreeTouchDeck pre-installed, check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
+
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_2.jpg)
 
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_features.png)
 
-While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), I really wanted to use capacitive touch. Unfortunately, most modules I could find where resistive touch and capacitive touch has a much nicer user experience. While I was designing, it made sense to put the ESP32 on the board itself, removing the need for an ESP32 Dev board. I wanted to take full advantage of the ESP32 wireless capabilities (Wifi, BLE) so I included a battery management circuit. ESP32 TouchDown can run of a LiPo battery and also charge it. Here is a full list of the features:
+While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), I really wanted to use capacitive touch. Unfortunately, most modules I could find were resistive touch and capacitive touch has a much nicer user experience. While I was designing, it made sense to put the ESP32 on the board itself, removing the need for an ESP32 Dev board. I wanted to take full advantage of the ESP32 wireless capabilities (Wifi, BLE) so I included a battery management circuit. ESP32 TouchDown can run off of a LiPo battery and also charge it. Here is a full list of the features:
 
 - ESP32-WROOM-32D
 - ILI9488 480*320 TFT screen in 4-wire SPI mode
-- FT6236 Capacitive Touch Controller
+- FT62x6 Capacitive Touch Controller
 - APK2112 3.3V regulator
 - MCP73831 battery management IC
 - CP2102 USB-to-UART bridge
@@ -41,9 +43,9 @@ The TFT backlight anode (positive supply) is selectable via a jumper on the back
 
 ![TFT Backlight Select](http://www.dustinwatts.nl/ESP32-TouchDown/backlight_select.png)
 
-The touch controller is a FocalTech FT6236 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/FT6236-FocalTechSystems.pdf)). The FT6236 uses I2C and has address 0X38. I made an Arduino IDE library available here: [https://github.com/DustinWatts/FT6236](https://github.com/DustinWatts/FT6236).
+The touch controller is a FocalTech FT62x6 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/FT6236-FocalTechSystems.pdf)). The first batch uses an FT6236 and the second batch of boards has the FT6206. Both have the same I2C address of 0X38. I made an Arduino IDE library available here: [https://github.com/DustinWatts/FT6236](https://github.com/DustinWatts/FT6236). This library also supports the FT6202.
 
-Pins used by the FT6236 are:
+Pins used by the FT62x6 are:
 
 - GPIO21 -> I2C data
 - GPIO22 -> I2C clock
