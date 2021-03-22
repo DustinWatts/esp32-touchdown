@@ -79,6 +79,11 @@ The following pins are used by the SD card holder:
 
 *CD (card detect) DAT1 and DAT2 are not connected.*
 
+# Uploading code to the ESP32 TouchDown
+
+The ESP32 TouchDown uses the same configuration as an ESP32 Dev Module. So you can use those board definitions to upload your own code to the ESP32 TouchDown:
+![Arduino IDE board settings](http://www.dustinwatts.nl/ESP32-TouchDown/docs/board_settings.png)
+
 # Open Source
 
 Everything about the ESP32 TouchDown is open source. This means I provide you will all the designs I make. In this repository, you will find the KiCad project, including schematic, and board layout. Also, the complete BOM is available to you. I have included the datasheets of all the hardware used.
