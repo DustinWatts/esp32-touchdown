@@ -2,7 +2,7 @@
 
 Available from:
 
-- Tindie: -> https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/ (Shipping from The Netherlands
+- Tindie: -> https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/ (Shipping from The Netherlands)
 
 - Eplop Electornics -> https://store.eplop.co.uk/product/esp32touchdown/ (Shipping from the UK)
 
