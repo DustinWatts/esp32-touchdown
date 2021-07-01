@@ -1,3 +1,13 @@
+# Where to buy?
+
+Available from:
+
+- Tindie: -> https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/ (Shipping from The Netherlands
+
+- Eplop Electornics -> https://store.eplop.co.uk/product/esp32touchdown/ (Shipping from the UK)
+
+- PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Shipping from China) 
+
 # ESP32 TouchDown
 
 #### If you bought your ESP32 TouchDown with FreeTouchDeck pre-installed, check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
