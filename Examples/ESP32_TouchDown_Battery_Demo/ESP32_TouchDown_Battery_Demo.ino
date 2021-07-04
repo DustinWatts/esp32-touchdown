@@ -18,6 +18,8 @@
  *  This library needs to be installed:
  * 
  *  - TFT_eSPI (available through the Library Manager)
+ *  
+ *  ! Don't forget to configure User_Setup.h in the TFT_eSPI library. You can use User_setup.h in "/TFT_eSPI Setup Example".
  *
  */
 
