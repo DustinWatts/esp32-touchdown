@@ -91,7 +91,9 @@ The following pins are used by the SD card holder:
 
 # Uploading code to the ESP32 TouchDown
 
-The ESP32 TouchDown uses the same configuration as an ESP32 Dev Module. So you can use those board definitions to upload your own code to the ESP32 TouchDown:
+For FreeTouchDeck installation instructions see: https://github.com/DustinWatts/FreeTouchDeck/wiki/1.-Installation
+
+For other code: The ESP32 TouchDown uses the same configuration as an ESP32 Dev Module. So you can use those board definitions to upload your own code to the ESP32 TouchDown:
 ![Arduino IDE board settings](http://www.dustinwatts.nl/ESP32-TouchDown/docs/board_settings.png)
 
 # Open Source
