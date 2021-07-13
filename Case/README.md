@@ -27,3 +27,8 @@ a cover with a battery compartment, and a back that has the same wedge style as 
 (file: ESP32_TouchDown_FTD_30.stl)
 
 ![ESP32 TouchDown](../Images/ESP32_TouchDown_Case_FTD_30.png)
+
+# More cases on Thingiverse
+
+Also check out the cases made by ESP32 TouchDown users:  https://www.thingiverse.com/search?q=esp32+touchdown
+
