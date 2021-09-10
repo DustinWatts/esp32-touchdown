@@ -47,8 +47,8 @@
 
 TFT_eSPI tft = TFT_eSPI();
 
-char ssid[64] = " ";           // <-- Your WIFI SSID
-char password[64] = " ";       // <-- Your WIFI PASSWORD
+char ssid[64] = "";           // <-- Your WIFI SSID
+char password[64] = "";       // <-- Your WIFI PASSWORD
 
 uint8_t sdSelectPin = 25;
 
@@ -171,8 +171,8 @@ void setup() {
     {
       Serial.println("SD Card initialisation failed!");
       tft.println("SD Card initialisation failed!");
-      while (1)
-        yield(); // We stop here
+//      while (1)
+//        yield(); // We stop here
     }
   
   Serial.println("SD Card initialised.");
@@ -329,17 +329,17 @@ void loop() {
       Serial.printf("Connecting to %s", ssid);
       tft.print("Connecting to ");
       tft.print(ssid);
+      
       if (String(WiFi.SSID()) != String(ssid))
       {
         WiFi.mode(WIFI_STA);
         WiFi.begin(ssid, password);
-      }
-    
-      while (WiFi.status() != WL_CONNECTED)
-      {
-        delay(500);
-        Serial.print(".");
-        tft.print(".");
+        while (WiFi.status() != WL_CONNECTED)
+        {
+          delay(500);
+          Serial.print(".");
+  
+        }
       }
       
       Serial.println("");
