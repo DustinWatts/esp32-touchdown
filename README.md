@@ -1,3 +1,12 @@
+# ESP32 TouchDown
+[![](https://img.shields.io/badge/buy-on%20Tindie-blue)](https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/)
+[![](https://img.shields.io/discord/693862273864827012?color=5165f6&label=chat%20on%20Discord)](https://discord.gg/RE3XevS)
+[![](https://badgen.net/github/license/DustinWatts/esp32-touchdown)](https://github.com/DustinWatts/FreeTouchDeck/blob/master/LICENSE)
+[![](https://badgen.net/badge/watch/on%20youtube/ff0000)](https://www.youtube.com/watch?v=sdVtHU2Gz7Y)
+[![](https://img.shields.io/twitter/follow/DustinWattsNL)](https://twitter.com/DustinWattsNL)
+
+
+
 # Where to buy?
 
 Available from:
@@ -8,7 +17,7 @@ Available from:
 
 - PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Shipping from China) 
 
-# ESP32 TouchDown
+# FreeTOuchDeck
 
 #### If you bought your ESP32 TouchDown with FreeTouchDeck pre-installed, check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
 
