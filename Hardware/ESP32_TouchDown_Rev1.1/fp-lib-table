@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ESP32_TouchDown_lib)(type KiCad)(uri ${KIPRJMOD}/ESP32_TouchDown_lib.pretty)(options "")(descr ""))
+)
