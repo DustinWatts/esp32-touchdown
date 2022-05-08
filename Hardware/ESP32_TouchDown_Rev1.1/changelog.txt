@@ -4,8 +4,6 @@ Rev 1.1
 
 - Changed Jumpers to pre-bridged pads (connected without solderblob)
 
-So if you want to disable the ON and CHARGE LED, you will have to cut the trace and if you want to change the TFT backlight from GPIO32 to fixed 3.3V you will have to cut the trace and put a solderblob from the middle pad to the other pad.
+- MCP73831 Battery management IC changed to Shouding SD8016 (pin compatible)
 
-MCP73831 Battery management IC changed to Shouding SD8016 (pin compatible)
-
-AP2112K Voltage regulator changed to AP7365 (pin compatible)
+- AP2112K Voltage regulator changed to AP7365 (pin compatible)
