@@ -17,9 +17,9 @@ Available from:
 
 - PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Shipping from China) 
 
-# FreeTOuchDeck
+# FreeTouchDeck
 
-#### If you bought your ESP32 TouchDown with FreeTouchDeck pre-installed, check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
+#### Your ESP32 TouchDown comes with FreeTouchDeck pre-installed. Check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
 
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_2.jpg)
 
