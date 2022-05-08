@@ -58,7 +58,7 @@ Pins used by the TFT screen are:
 - GPIO18 -> SPI Clock
 - GPIO23 -> SDI (MOSI)
 
-The TFT backlight anode (positive supply) is selectable via a jumper on the back. You can either power it directly from 3.3V or use GPIO32. By default, the positive source is 3.3V. You can change this and use PWM to control the backlight brightness.
+The TFT backlight anode (positive supply) is selectable via a jumper on the back. You can either power it directly from 3.3V or use GPIO32. By default, the positive source is GPIO32. You can this pin and use PWM to control the backlight brightness.
 
 ![TFT Backlight Select](http://www.dustinwatts.nl/ESP32-TouchDown/backlight_select.png)
 
