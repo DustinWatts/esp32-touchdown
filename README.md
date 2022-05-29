@@ -30,8 +30,8 @@ While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), 
 - ESP32-WROOM-32D
 - ILI9488 480*320 TFT screen in 4-wire SPI mode
 - FT62x6 Capacitive Touch Controller
-- APK2112 3.3V regulator (On V1.1 of the board an AP7365 is used, see changelog.txt)
-- MCP73831 battery management IC (On V1.1 of the board an Shouding SD8016 is used, see changelog.txt)
+- APK2112 3.3V regulator _(On V1.1 of the board an AP7365 is used, see changelog.txt)_
+- MCP73831 battery management IC _(On V1.1 of the board an Shouding SD8016 is used, see changelog.txt)_
 - CP2102 USB-to-UART bridge
 - USB-C connector
 - microSD card holder
@@ -60,7 +60,7 @@ Pins used by the TFT screen are:
 
 The TFT backlight anode (positive supply) is selectable via a jumper on the back. You can either power it directly from 3.3V or use GPIO32. By default, the positive source is GPIO32. You can this pin and use PWM to control the backlight brightness.
 
-Note: On V1.1 of the board. The jumpers used are with bridged pads. So by default have no solder blob. See changelog.txt
+_Note: On V1.1 of the board the jumpers used are with bridged pads. So by default have no solder blob. See changelog.txt_
 
 ![TFT Backlight Select](http://www.dustinwatts.nl/ESP32-TouchDown/backlight_select.png)
 
