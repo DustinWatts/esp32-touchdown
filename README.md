@@ -7,7 +7,7 @@
 
 
 
-# Where to buy?
+## Where to buy?
 
 Available from:
 
@@ -17,7 +17,7 @@ Available from:
 
 - PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Shipping from China) 
 
-# FreeTouchDeck
+## FreeTouchDeck
 
 #### Your ESP32 TouchDown comes with FreeTouchDeck pre-installed. Check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
 
@@ -42,11 +42,11 @@ While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), 
 
 ESP32 TouchDown works out of the box (as ESP32 Dev Module) with the Arduino IDE, providing you have installed the ESP32 Arduino Core. If you have not, this is where you can find it: [https://github.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32).
 
-# Documentation:
+## Documentation:
 
 Documentation can be found in the [Wiki](https://github.com/DustinWatts/esp32-touchdown/wiki).
 
-# TFT screen and touch controller
+## TFT screen and touch controller
 
 ESP32 TouchDown uses an 480x320 screen with an ILI9488 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/ILITEK_ILI9488.pdf)) driver. There are numerous drivers out there, but I found TFT_eSPI by Bodmer the most versatile. [https://github.com/Bodmer/TFT_eSPI](https://github.com/Bodmer/TFT_eSPI). 
 
@@ -72,7 +72,7 @@ Pins used by the FT62x6 are:
 - GPIO22 -> I2C clock
 - GPIO27 -> IRQ
 
-# GPIO Breakout
+## GPIO Breakout
 
 The following GPIO's are broken out on the header:
 
@@ -89,7 +89,7 @@ The following GPIO's are broken out on the header:
 - GPIO 33
 - GPIO 34 (note: INPUT only!)
 
-# SD Card
+## SD Card
 
 The following pins are used by the SD card holder:
 
@@ -100,14 +100,14 @@ The following pins are used by the SD card holder:
 
 *CD (card detect) DAT1 and DAT2 are not connected.*
 
-# Uploading code to the ESP32 TouchDown
+## Uploading code to the ESP32 TouchDown
 
 For FreeTouchDeck installation instructions see: https://github.com/DustinWatts/FreeTouchDeck/wiki/1.-Installation
 
 For other code: The ESP32 TouchDown uses the same configuration as an ESP32 Dev Module. So you can use those board definitions to upload your own code to the ESP32 TouchDown:
 ![Arduino IDE board settings](http://www.dustinwatts.nl/ESP32-TouchDown/docs/board_settings.png)
 
-# Open Source
+## Open Source
 
 Everything about the ESP32 TouchDown is open source. This means I provide you will all the designs I make. In this repository, you will find the KiCad project, including schematic, and board layout. Also, the complete BOM is available to you. I have included the datasheets of all the hardware used.
 
@@ -130,5 +130,3 @@ https://www.paypal.me/dustinwattsnl
 ## Help
 
 For quick access to help you can join my Discord server where I have a dedicated #esp32-touchdown channel. https://discord.gg/RE3XevS
-
-
