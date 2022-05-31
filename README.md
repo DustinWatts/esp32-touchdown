@@ -11,17 +11,17 @@
 
 Available from:
 
-- Tindie: -> https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/ (Shipping from The Netherlands)
+- Tindie: -> https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/ (Ships from The Netherlands)
 
-- Eplop Electornics -> https://store.eplop.co.uk/product/esp32touchdown/ (Shipping from the UK)
+- Eplop Electornics -> https://store.eplop.co.uk/product/esp32touchdown/ (Ships from the UK)
 
-- PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Shipping from China) 
+- PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Ships from China) 
 
 ## FreeTouchDeck
 
 #### Your ESP32 TouchDown comes with FreeTouchDeck pre-installed. Check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
 
-![ESP32 TouchDown](/Images/no_overlay.JPG)
+![ESP32 TouchDown](/Images/osh.JPG)
 
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_features.png)
 
