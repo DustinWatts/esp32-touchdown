@@ -111,7 +111,14 @@ For other code: The ESP32 TouchDown uses the same configuration as an ESP32 Dev 
 
 Everything about the ESP32 TouchDown is open source. This means I provide you will all the designs I make. In this repository, you will find the KiCad project, including schematic, and board layout. Also, the complete BOM is available to you. I have included the datasheets of all the hardware used.
 
-![License](http://www.dustinwatts.nl/ESP32-TouchDown/license.svg)
+<div style="margin:0 auto;">
+  
+  <div> 
+    <img src="http://www.dustinwatts.nl/ESP32-TouchDown/license.svg" alt="License" width="200"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="/Images/oshw-mark-nl000004-transp-900x660.png" alt="OSHW" width="160"/>
+  </div>
+
+</div>
 
 ## Support Me
 
@@ -119,7 +126,7 @@ If you like what I am doing, there are a number of ways you can support me.
 
 | Platform | Link|
 |:-----:|:-----|
-| [<img src="https://github.com/DustinWatts/small_logos/blob/main/twitter_logo.png" alt="Twtter" width="24"/>](https://twitter.com/dustinwattsnl "Follow me on Twitter") | You can follow me on Twitter: [@dustinwattsnl](https://twitter.com/dustinwattsnl "Follow me on Twitter")|
+| [<img src="https://github.com/DustinWatts/small_logos/blob/main/twitter_logo.png" alt="Twitter" width="24"/>](https://twitter.com/dustinwattsnl "Follow me on Twitter") | You can follow me on Twitter: [@dustinwattsnl](https://twitter.com/dustinwattsnl "Follow me on Twitter")|
 | [<img src="https://github.com/DustinWatts/small_logos/blob/main/youtube_logo.png" alt="YouTube" width="32"/>](https://www.youtube.com/dustinwatts "Subscrive to my YouTube channel") | You can subscribe to my channel on Youtube: [/dustinWatts](https://www.youtube.com/dustinwatts "Subscribe to my YouTube channel") |
 | [<img src="https://github.com/DustinWatts/small_logos/blob/main/patreon_logo.png" alt="Patreon" width="32"/>](https://www.patreon.com/dustinwatts) | You can support me by becoming a patron on Patreon: https://www.patreon.com/dustinwatts |
 | [<img src="https://github.com/DustinWatts/small_logos/blob/main/paypalme_logo.png" alt="PayPal.me" width="32"/>](https://www.paypal.me/dustinwattsnl) | You can make a one time donation using PayPal.me: https://www.paypal.me/dustinwattsnl |
