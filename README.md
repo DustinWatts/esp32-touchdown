@@ -11,17 +11,17 @@
 
 Available from:
 
-- Tindie: -> https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/ (Shipping from The Netherlands)
+- Tindie: -> https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/ (Ships from The Netherlands)
 
-- Eplop Electornics -> https://store.eplop.co.uk/product/esp32touchdown/ (Shipping from the UK)
+- Eplop Electornics -> https://store.eplop.co.uk/product/esp32touchdown/ (Ships from the UK)
 
-- PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Shipping from China) 
+- PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Ships from China) 
 
 ## FreeTouchDeck
 
 #### Your ESP32 TouchDown comes with FreeTouchDeck pre-installed. Check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
 
-![ESP32 TouchDown](/Images/no_overlay.JPG)
+![ESP32 TouchDown](/Images/osh.JPG)
 
 ![ESP32 TouchDown](http://www.dustinwatts.nl/ESP32-TouchDown/ESP32_TouchDown_features.png)
 
@@ -31,7 +31,7 @@ While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), 
 - ILI9488 480*320 TFT screen in 4-wire SPI mode
 - FT62x6 Capacitive Touch Controller
 - APK2112 3.3V regulator _(On V1.1 of the board an AP7365 is used, see changelog.txt)_
-- MCP73831 battery management IC _(On V1.1 of the board an Shouding SD8016 is used, see changelog.txt)_
+- MCP73831 battery management IC _(On V1.1 of the board a Shouding SD8016 is used, see changelog.txt)_
 - CP2102 USB-to-UART bridge
 - USB-C connector
 - microSD card holder
