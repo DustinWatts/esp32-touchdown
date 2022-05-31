@@ -7,7 +7,7 @@
 
 
 
-# Where to buy?
+## Where to buy?
 
 Available from:
 
@@ -17,7 +17,7 @@ Available from:
 
 - PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Shipping from China) 
 
-# FreeTouchDeck
+## FreeTouchDeck
 
 #### Your ESP32 TouchDown comes with FreeTouchDeck pre-installed. Check out this simple start guide: [With FreeTouchDeck pre-installed](https://github.com/DustinWatts/esp32-touchdown/wiki/With-FreeTouchDeck-pre-installed)
 
@@ -30,8 +30,8 @@ While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), 
 - ESP32-WROOM-32D
 - ILI9488 480*320 TFT screen in 4-wire SPI mode
 - FT62x6 Capacitive Touch Controller
-- APK2112 3.3V regulator (On V1.1 of the board an AP7365 is used, see changelog.txt)
-- MCP73831 battery management IC (On V1.1 of the board an Shouding SD8016 is used, see changelog.txt)
+- APK2112 3.3V regulator _(On V1.1 of the board an AP7365 is used, see changelog.txt)_
+- MCP73831 battery management IC _(On V1.1 of the board an Shouding SD8016 is used, see changelog.txt)_
 - CP2102 USB-to-UART bridge
 - USB-C connector
 - microSD card holder
@@ -42,11 +42,11 @@ While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), 
 
 ESP32 TouchDown works out of the box (as ESP32 Dev Module) with the Arduino IDE, providing you have installed the ESP32 Arduino Core. If you have not, this is where you can find it: [https://github.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32).
 
-# Documentation:
+## Documentation:
 
 Documentation can be found in the [Wiki](https://github.com/DustinWatts/esp32-touchdown/wiki).
 
-# TFT screen and touch controller
+## TFT screen and touch controller
 
 ESP32 TouchDown uses an 480x320 screen with an ILI9488 ([datasheet](https://github.com/DustinWatts/esp32-touchdown/blob/main/Hardware/Datasheets/ILITEK_ILI9488.pdf)) driver. There are numerous drivers out there, but I found TFT_eSPI by Bodmer the most versatile. [https://github.com/Bodmer/TFT_eSPI](https://github.com/Bodmer/TFT_eSPI). 
 
@@ -60,7 +60,7 @@ Pins used by the TFT screen are:
 
 The TFT backlight anode (positive supply) is selectable via a jumper on the back. You can either power it directly from 3.3V or use GPIO32. By default, the positive source is GPIO32. You can this pin and use PWM to control the backlight brightness.
 
-Note: On V1.1 of the board. The jumpers used are with bridged pads. So by default have no solder blob. See changelog.txt
+_Note: On V1.1 of the board the jumpers used are with bridged pads. So by default have no solder blob. See changelog.txt_
 
 ![TFT Backlight Select](http://www.dustinwatts.nl/ESP32-TouchDown/backlight_select.png)
 
@@ -72,7 +72,7 @@ Pins used by the FT62x6 are:
 - GPIO22 -> I2C clock
 - GPIO27 -> IRQ
 
-# GPIO Breakout
+## GPIO Breakout
 
 The following GPIO's are broken out on the header:
 
@@ -89,7 +89,7 @@ The following GPIO's are broken out on the header:
 - GPIO 33
 - GPIO 34 (note: INPUT only!)
 
-# SD Card
+## SD Card
 
 The following pins are used by the SD card holder:
 
@@ -100,17 +100,30 @@ The following pins are used by the SD card holder:
 
 *CD (card detect) DAT1 and DAT2 are not connected.*
 
-# Uploading code to the ESP32 TouchDown
+## Uploading code to the ESP32 TouchDown
 
 For FreeTouchDeck installation instructions see: https://github.com/DustinWatts/FreeTouchDeck/wiki/1.-Installation
 
 For other code: The ESP32 TouchDown uses the same configuration as an ESP32 Dev Module. So you can use those board definitions to upload your own code to the ESP32 TouchDown:
 ![Arduino IDE board settings](http://www.dustinwatts.nl/ESP32-TouchDown/docs/board_settings.png)
 
-# Open Source
+## Open Source
 
 Everything about the ESP32 TouchDown is open source. This means I provide you will all the designs I make. In this repository, you will find the KiCad project, including schematic, and board layout. Also, the complete BOM is available to you. I have included the datasheets of all the hardware used.
 
 ![License](http://www.dustinwatts.nl/ESP32-TouchDown/license.svg)
 
+## Support Me
 
+If you like what I am doing, there are a number of ways you can support me. 
+
+| Platform | Link|
+|:-----:|:-----|
+| [<img src="https://github.com/DustinWatts/small_logos/blob/main/twitter_logo.png" alt="Twtter" width="24"/>](https://twitter.com/dustinwattsnl "Follow me on Twitter") | You can follow me on Twitter: [@dustinwattsnl](https://twitter.com/dustinwattsnl "Follow me on Twitter")|
+| [<img src="https://github.com/DustinWatts/small_logos/blob/main/youtube_logo.png" alt="YouTube" width="32"/>](https://www.youtube.com/dustinwatts "Subscrive to my YouTube channel") | You can subscribe to my channel on Youtube: [/dustinWatts](https://www.youtube.com/dustinwatts "Subscribe to my YouTube channel") |
+| [<img src="https://github.com/DustinWatts/small_logos/blob/main/patreon_logo.png" alt="Patreon" width="32"/>](https://www.patreon.com/dustinwatts) | You can support me by becoming a patron on Patreon: https://www.patreon.com/dustinwatts |
+| [<img src="https://github.com/DustinWatts/small_logos/blob/main/paypalme_logo.png" alt="PayPal.me" width="32"/>](https://www.paypal.me/dustinwattsnl) | You can make a one time donation using PayPal.me: https://www.paypal.me/dustinwattsnl |
+
+## Help
+
+For quick access to help you can join my Discord server where I have a dedicated #esp32-touchdown channel. https://discord.gg/RE3XevS
