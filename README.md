@@ -31,7 +31,7 @@ While working on [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), 
 - ILI9488 480*320 TFT screen in 4-wire SPI mode
 - FT62x6 Capacitive Touch Controller
 - APK2112 3.3V regulator _(On V1.1 of the board an AP7365 is used, see changelog.txt)_
-- MCP73831 battery management IC _(On V1.1 of the board an Shouding SD8016 is used, see changelog.txt)_
+- MCP73831 battery management IC _(On V1.1 of the board a Shouding SD8016 is used, see changelog.txt)_
 - CP2102 USB-to-UART bridge
 - USB-C connector
 - microSD card holder
