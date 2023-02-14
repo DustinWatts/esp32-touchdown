@@ -13,6 +13,8 @@ Available from:
 
 - Tindie: -> https://www.tindie.com/products/dustinwattsnl/esp32-touchdown/ (Ships from The Netherlands)
 
+- Lectronz -> https://lectronz.com/products/esp32-touchdown (Ships from The Netherlands)
+
 - Eplop Electornics -> https://store.eplop.co.uk/product/esp32touchdown/ (Ships from the UK)
 
 - PCBWay -> https://www.pcbway.com/project/gifts_detail/ESP32_TouchDown.html (Ships from China) 
