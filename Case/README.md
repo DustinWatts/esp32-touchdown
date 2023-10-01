@@ -2,7 +2,8 @@
 
 The case for the ESP32 TouchDown comes in two parts. The front is the same for every style of case you want. The back comes in four variants; a flush cover, a cover with a battery compartment, a back that has the same wedge style as [FreeTouchDeck](https://github.com/DustinWatts/FreeTouchDeck), and a similar style but at an angle of 30°.
 
-You will also find the .f3z file so you can import the case in Fusion360 and modify it to your liking.
+You will also find the .f3z file so you can import the case in Fusion360 and modify it to your liking. 
+The file called "ESP32_TouchDown_Case_with_Grid.f3z" contains the front with a 2*3 grid.
 
 # The Front
 This part is the same for all.
