@@ -24,6 +24,10 @@ Like the case for FreeTouchDeck.
 Like the case for FreeTouchDeck but at an angle of 30°.
 ![ESP32 TouchDown](../Images/ESP32_TouchDown_Case_FTD_30.png)
 (file: ESP32_TouchDown_FTD_30.stl)
+# The Grid Style Front
+A front that has a 2*3 grid.
+![ESP32 TouchDown](../Images/ESP32_TouchDown_Case_Front_Grid.png)
+(ESP32_TouchDown_Front_Grid.stl)
 # More cases on Thingiverse
 
 Also check out the cases made by ESP32 TouchDown users:  https://www.thingiverse.com/search?q=esp32+touchdown
