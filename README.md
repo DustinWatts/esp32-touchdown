@@ -102,6 +102,10 @@ The following pins are used by the SD card holder:
 
 *CD (card detect) DAT1 and DAT2 are not connected.*
 
+## Speaker (buzzer)
+
+- GPIO 26
+
 ## Uploading code to the ESP32 TouchDown
 
 For FreeTouchDeck installation instructions see: https://github.com/DustinWatts/FreeTouchDeck/wiki/1.-Installation
